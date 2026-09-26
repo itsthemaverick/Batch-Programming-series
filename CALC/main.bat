@@ -33,3 +33,13 @@ pause
 exit /b
 rem --------------------
 
+:substract 
+set /p a = Enter First Number 
+set /p b = Enter Second Number 
+
+set /a result = a-b
+
+echo Result = %result%
+pause
+exit /b
+
