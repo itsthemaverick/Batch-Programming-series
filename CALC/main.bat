@@ -20,3 +20,16 @@ if "%choice%" == "5" exit
 
 goto menu
 
+rem -----------------------
+
+:add 
+set /p a = Enter First Number 
+set /p b = Enter Second Number 
+
+set /a result = a+b
+
+echo Result = %result%
+pause
+exit /b
+rem --------------------
+
