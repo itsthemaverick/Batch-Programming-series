@@ -6,9 +6,10 @@ echo CALCULATOR
 echo -------------------------
 
 echo 1.ADD
-echo 1.SUBSTRACT
-echo 1.MULTIPLY
-echo 1.DIVIDE
+echo 2.SUBSTRACT
+echo 3.MULTIPLY
+echo 4.DIVIDE
+echo 4.EXIT
 
 set /p choice = Choose:
 
@@ -42,4 +43,17 @@ set /a result = a-b
 echo Result = %result%
 pause
 exit /b
+
+rem --------------------
+
+:multiply 
+set /p a = Enter First Number 
+set /p b = Enter Second Number 
+
+set /a result = a*b
+
+echo Result = %result%
+pause
+exit /b
+
 
